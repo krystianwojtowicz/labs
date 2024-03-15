@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  max-width: 1200px;
+  margin: auto;
+  font-family: Arial;
+
+  #top {
+    background-image: url('./images/top.png');
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+
+    #heading-top {
+      color: white;
+      font-size: 44px;
+      margin-left: 5%;
+    }
+
+    #heading-top::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  #main {
+    padding-top: 50px;
+    margin: 0 5%;
+
+    #paragraph {
+      margin-top: 20px;
+    }
+
+    #main-flex {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}

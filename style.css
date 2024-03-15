@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  max-width: 1200px;
+  margin: auto;
+  font-family: Arial;
+}
+#wrapper #top {
+  background-image: url("./images/top.png");
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+}
+#wrapper #top #heading-top {
+  color: white;
+  font-size: 44px;
+  margin-left: 5%;
+}
+#wrapper #top #heading-top::first-letter {
+  text-transform: uppercase;
+}
+#wrapper #main {
+  padding-top: 50px;
+  margin: 0 5%;
+}
+#wrapper #main #paragraph {
+  margin-top: 20px;
+}
+#wrapper #main #main-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=style.css.map */
