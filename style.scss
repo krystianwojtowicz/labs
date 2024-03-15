@@ -4,39 +4,105 @@
   box-sizing: border-box;
 }
 
-#wrapper {
-  max-width: 1200px;
-  margin: auto;
+#top {
+  display: flex;
+  align-items: center;
+  background-image: url('./images/top.png');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+
+  #top__heading {
+    color: #ffffff;
+    font-size: 44px;
+    margin-left: 5%;
+    font-family: Arial;
+  }
+
+  #top__heading::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+#main {
+  padding-top: 50px;
+  margin: 0 5%;
   font-family: Arial;
+  color: #666666;
 
-  #top {
-    background-image: url('./images/top.png');
-    background-size: cover;
-    background-position: center;
-    padding: 200px 0;
+  #main__heading {
+    font-size: 18px;
+  }
 
-    #heading-top {
-      color: white;
-      font-size: 44px;
-      margin-left: 5%;
+  #main__heading::first-letter {
+    text-transform: uppercase;
+  }
+
+  #main__paragraph {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  #main__paragraph::first-letter {
+    text-transform: uppercase;
+  }
+
+  #main__flex {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+
+    .main__flex__div {
+      height: 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      .main__flex__div__p {
+        font-size: 21px;
+      }
+
+      .main__flex__div__p::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  #main__button {
+    text-align: center;
+    margin-bottom: 50px;
+
+    #main__button__open {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #127422;
+      width: 280px;
+      height: 45px;
+      border: none;
     }
 
-    #heading-top::first-letter {
+    #main__button__open::first-letter {
       text-transform: uppercase;
     }
   }
+}
 
-  #main {
-    padding-top: 50px;
-    margin: 0 5%;
-
-    #paragraph {
-      margin-top: 20px;
-    }
-
-    #main-flex {
-      display: flex;
-      justify-content: space-around;
-    }
+@media only screen and (max-width: 768px){
+  #main #main__paragraph {
+    font-size: 12px;
   }
+}
+
+@media only screen and (max-width: 400px){
+  #main #main__flex {
+    display: block;
+
+    .main__flex__div {
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+    }
+  } 
 }

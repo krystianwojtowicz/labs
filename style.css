@@ -4,35 +4,102 @@
   box-sizing: border-box;
 }
 
-#wrapper {
-  max-width: 1200px;
-  margin: auto;
-  font-family: Arial;
-}
-#wrapper #top {
+#top {
+  display: flex;
+  align-items: center;
   background-image: url("./images/top.png");
   background-size: cover;
   background-position: center;
-  padding: 200px 0;
+  height: 500px;
 }
-#wrapper #top #heading-top {
-  color: white;
+
+#top #top__heading {
+  color: #ffffff;
   font-size: 44px;
   margin-left: 5%;
+  font-family: Arial;
 }
-#wrapper #top #heading-top::first-letter {
+
+#top #top__heading::first-letter {
   text-transform: uppercase;
 }
-#wrapper #main {
+
+#main {
   padding-top: 50px;
   margin: 0 5%;
+  font-family: Arial;
+  color: #666666;
 }
-#wrapper #main #paragraph {
+
+#main #main__heading {
+  font-size: 18px;
+}
+
+#main #main__heading::first-letter {
+  text-transform: uppercase;
+}
+
+#main #main__paragraph {
   margin-top: 20px;
+  font-size: 16px;
 }
-#wrapper #main #main-flex {
+
+#main #main__paragraph::first-letter {
+  text-transform: uppercase;
+}
+
+#main #main__flex {
+  margin: 50px 0;
   display: flex;
   justify-content: space-around;
 }
 
-/*# sourceMappingURL=style.css.map */
+#main #main__flex .main__flex__div {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#main #main__flex .main__flex__div .main__flex__div__p {
+  font-size: 21px;
+}
+
+#main #main__flex .main__flex__div .main__flex__div__p::first-letter {
+  text-transform: uppercase;
+}
+
+#main #main__button {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#main #main__button #main__button__open {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #127422;
+  width: 280px;
+  height: 45px;
+  border: none;
+}
+
+#main #main__button #main__button__open::first-letter {
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  #main #main__paragraph {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main #main__flex {
+    display: block;
+  }
+  #main #main__flex .main__flex__div:not(:first-child) {
+    margin-top: 30px;
+  }
+}

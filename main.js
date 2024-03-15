@@ -10,7 +10,7 @@ function changeText(gender) {
     text = "Dear Mx. Anderson";
   }
 
-  document.getElementById("heading-main").innerHTML = text;
+  document.getElementById("main__heading").innerHTML = text;
 }
 
 changeText(gender);
