@@ -1,4 +1,4 @@
-const gender = "femal";
+const gender = "female";
 let text = "";
 
 function changeText(gender) {

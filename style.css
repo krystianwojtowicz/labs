@@ -39,12 +39,12 @@
   text-transform: uppercase;
 }
 
-#main #main__paragraph {
+#main #main__p {
   margin-top: 20px;
   font-size: 16px;
 }
 
-#main #main__paragraph::first-letter {
+#main #main__p::first-letter {
   text-transform: uppercase;
 }
 
@@ -91,7 +91,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  #main #main__paragraph {
+  #main #main__p {
     font-size: 12px;
   }
 }
